@@ -9,6 +9,11 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *itemImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *addToCartButton;
+- (IBAction)addToCartButtonClicked:(id)sender;
 
 @end
 
@@ -28,7 +33,10 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.itemImageView.image = [UIImage imageNamed:self.detailItem.image];
+        self.nameLabel.text = self.detailItem.name;
+        self.priceLabel.text = [self.detailItem.price stringValue];
+        [self.addToCartButton setTitle:NSLocalizedString(@"Add to cart", @"Add to cart") forState:UIControlStateNormal];
     }
 }
 
@@ -43,4 +51,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addToCartButtonClicked:(id)sender {
+}
 @end

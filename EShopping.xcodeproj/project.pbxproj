@@ -15,6 +15,10 @@
 		6177B30B1B4B87CE00035DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6177B30A1B4B87CE00035DAC /* Images.xcassets */; };
 		6177B30E1B4B87CE00035DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6177B30C1B4B87CE00035DAC /* LaunchScreen.xib */; };
 		6177B31A1B4B87CF00035DAC /* EShoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6177B3191B4B87CF00035DAC /* EShoppingTests.m */; };
+		61909D451B4CE5CC006943A8 /* ItemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61909D441B4CE5CC006943A8 /* ItemList.plist */; };
+		61909D491B4CEE29006943A8 /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D481B4CEE29006943A8 /* BaseItem.m */; };
+		61909D811B4D2A46006943A8 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D801B4D2A46006943A8 /* Utility.m */; };
+		61909D841B4D2E13006943A8 /* BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D831B4D2E13006943A8 /* BaseCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 		6177B3131B4B87CF00035DAC /* EShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6177B3181B4B87CF00035DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6177B3191B4B87CF00035DAC /* EShoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EShoppingTests.m; sourceTree = "<group>"; };
+		61909D441B4CE5CC006943A8 /* ItemList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ItemList.plist; sourceTree = "<group>"; };
+		61909D471B4CEE29006943A8 /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseItem.h; sourceTree = "<group>"; };
+		61909D481B4CEE29006943A8 /* BaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseItem.m; sourceTree = "<group>"; };
+		61909D7F1B4D2A46006943A8 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		61909D801B4D2A46006943A8 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		61909D821B4D2E13006943A8 /* BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategory.h; sourceTree = "<group>"; };
+		61909D831B4D2E13006943A8 /* BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,8 @@
 		6177B2F91B4B87CE00035DAC /* EShopping */ = {
 			isa = PBXGroup;
 			children = (
+				61909D7E1B4D2A39006943A8 /* Utility */,
+				61909D461B4CEE01006943A8 /* Models */,
 				6177B2FE1B4B87CE00035DAC /* AppDelegate.h */,
 				6177B2FF1B4B87CE00035DAC /* AppDelegate.m */,
 				6177B3011B4B87CE00035DAC /* MasterViewController.h */,
@@ -93,6 +106,7 @@
 				6177B3071B4B87CE00035DAC /* Main.storyboard */,
 				6177B30A1B4B87CE00035DAC /* Images.xcassets */,
 				6177B30C1B4B87CE00035DAC /* LaunchScreen.xib */,
+				61909D431B4CE554006943A8 /* Resources */,
 				6177B2FA1B4B87CE00035DAC /* Supporting Files */,
 			);
 			path = EShopping;
@@ -122,6 +136,34 @@
 				6177B3181B4B87CF00035DAC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61909D431B4CE554006943A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61909D441B4CE5CC006943A8 /* ItemList.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61909D461B4CEE01006943A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61909D471B4CEE29006943A8 /* BaseItem.h */,
+				61909D481B4CEE29006943A8 /* BaseItem.m */,
+				61909D821B4D2E13006943A8 /* BaseCategory.h */,
+				61909D831B4D2E13006943A8 /* BaseCategory.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61909D7E1B4D2A39006943A8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				61909D7F1B4D2A46006943A8 /* Utility.h */,
+				61909D801B4D2A46006943A8 /* Utility.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +248,7 @@
 			files = (
 				6177B3091B4B87CE00035DAC /* Main.storyboard in Resources */,
 				6177B30E1B4B87CE00035DAC /* LaunchScreen.xib in Resources */,
+				61909D451B4CE5CC006943A8 /* ItemList.plist in Resources */,
 				6177B30B1B4B87CE00035DAC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +269,10 @@
 			files = (
 				6177B3001B4B87CE00035DAC /* AppDelegate.m in Sources */,
 				6177B3031B4B87CE00035DAC /* MasterViewController.m in Sources */,
+				61909D491B4CEE29006943A8 /* BaseItem.m in Sources */,
 				6177B2FD1B4B87CE00035DAC /* main.m in Sources */,
+				61909D811B4D2A46006943A8 /* Utility.m in Sources */,
+				61909D841B4D2E13006943A8 /* BaseCategory.m in Sources */,
 				6177B3061B4B87CE00035DAC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +470,7 @@
 				6177B31F1B4B87CF00035DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6177B3201B4B87CF00035DAC /* Build configuration list for PBXNativeTarget "EShoppingTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +479,7 @@
 				6177B3221B4B87CF00035DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
