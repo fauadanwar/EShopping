@@ -10,6 +10,7 @@
 
 @interface BaseItem : NSObject
 
+@property(atomic,strong)NSNumber *itemID;
 @property(atomic,strong)NSString *name;
 @property(atomic,strong)NSNumber *price;
 @property(atomic,strong)NSString *image;

@@ -21,7 +21,8 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
+- (void)setDetailItem:(BaseItem *)newDetailItem {
+    
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
             
@@ -52,5 +53,19 @@
 }
 
 - (IBAction)addToCartButtonClicked:(id)sender {
+    
+    CartItem *cartItem = [[CartItem alloc] init];
+    
+    cartItem.itemID = self.detailItem.itemID;
+    
+    cartItem.name = self.detailItem.name;
+    
+    cartItem.image = self.detailItem.image;
+    
+    cartItem.price = self.detailItem.price;
+    
+    cartItem.quantity = @1;
+    
+    [[Cart sharedInstance].items addObject:cartItem];
 }
 @end

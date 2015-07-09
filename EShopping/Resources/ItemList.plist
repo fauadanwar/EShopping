@@ -6,6 +6,8 @@
 		<key>Items</key>
 		<array>
 			<dict>
+				<key>Item ID</key>
+				<integer>1</integer>
 				<key>Name</key>
 				<string>Microwave Oven</string>
 				<key>Image</key>
@@ -14,6 +16,8 @@
 				<integer>24000</integer>
 			</dict>
 			<dict>
+				<key>Item ID</key>
+				<integer>2</integer>
 				<key>Name</key>
 				<string>Vacume Cleaner</string>
 				<key>Image</key>
@@ -22,6 +26,8 @@
 				<integer>5000</integer>
 			</dict>
 			<dict>
+				<key>Item ID</key>
+				<integer>3</integer>
 				<key>Name</key>
 				<string>Telivision</string>
 				<key>Image</key>
@@ -32,11 +38,15 @@
 		</array>
 		<key>Category</key>
 		<string>Electronics</string>
+		<key>Category ID</key>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>Items</key>
 		<array>
 			<dict>
+				<key>Item ID</key>
+				<integer>4</integer>
 				<key>Name</key>
 				<string>Table</string>
 				<key>Image</key>
@@ -45,6 +55,8 @@
 				<integer>8000</integer>
 			</dict>
 			<dict>
+				<key>Item ID</key>
+				<integer>5</integer>
 				<key>Name</key>
 				<string>Chair</string>
 				<key>Image</key>
@@ -53,6 +65,8 @@
 				<integer>4000</integer>
 			</dict>
 			<dict>
+				<key>Item ID</key>
+				<integer>6</integer>
 				<key>Name</key>
 				<string>Almirah</string>
 				<key>Image</key>
@@ -63,6 +77,8 @@
 		</array>
 		<key>Category</key>
 		<string>Furniture</string>
+		<key>Category ID</key>
+		<string>2</string>
 	</dict>
 </array>
 </plist>

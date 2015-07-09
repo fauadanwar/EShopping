@@ -13,6 +13,7 @@
 
 @synthesize name;
 @synthesize itemArray;
+@synthesize categoryID;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary
 {
@@ -21,6 +22,7 @@
     if (self)
     {
         name = [dictionary objectForKey:@"Category"];
+        categoryID = [dictionary objectForKey:@"Category ID"];
         itemArray = [self getItemsListFromDictionary:dictionary];
     }
     

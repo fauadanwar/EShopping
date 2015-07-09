@@ -19,6 +19,9 @@
 		61909D491B4CEE29006943A8 /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D481B4CEE29006943A8 /* BaseItem.m */; };
 		61909D811B4D2A46006943A8 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D801B4D2A46006943A8 /* Utility.m */; };
 		61909D841B4D2E13006943A8 /* BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D831B4D2E13006943A8 /* BaseCategory.m */; };
+		61909D8A1B4EC254006943A8 /* CartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D891B4EC254006943A8 /* CartItemCell.m */; };
+		61909D8D1B4EC396006943A8 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D8C1B4EC396006943A8 /* CartViewController.m */; };
+		61909D901B4ECE8E006943A8 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 61909D8F1B4ECE8E006943A8 /* Cart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		61909D801B4D2A46006943A8 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		61909D821B4D2E13006943A8 /* BaseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategory.h; sourceTree = "<group>"; };
 		61909D831B4D2E13006943A8 /* BaseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategory.m; sourceTree = "<group>"; };
+		61909D881B4EC254006943A8 /* CartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemCell.h; sourceTree = "<group>"; };
+		61909D891B4EC254006943A8 /* CartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemCell.m; sourceTree = "<group>"; };
+		61909D8B1B4EC396006943A8 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		61909D8C1B4EC396006943A8 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		61909D8E1B4ECE8E006943A8 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		61909D8F1B4ECE8E006943A8 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +104,12 @@
 		6177B2F91B4B87CE00035DAC /* EShopping */ = {
 			isa = PBXGroup;
 			children = (
+				61909D871B4EC224006943A8 /* CartItemCell */,
 				61909D7E1B4D2A39006943A8 /* Utility */,
 				61909D461B4CEE01006943A8 /* Models */,
 				6177B2FE1B4B87CE00035DAC /* AppDelegate.h */,
+				61909D8B1B4EC396006943A8 /* CartViewController.h */,
+				61909D8C1B4EC396006943A8 /* CartViewController.m */,
 				6177B2FF1B4B87CE00035DAC /* AppDelegate.m */,
 				6177B3011B4B87CE00035DAC /* MasterViewController.h */,
 				6177B3021B4B87CE00035DAC /* MasterViewController.m */,
@@ -153,6 +165,8 @@
 				61909D481B4CEE29006943A8 /* BaseItem.m */,
 				61909D821B4D2E13006943A8 /* BaseCategory.h */,
 				61909D831B4D2E13006943A8 /* BaseCategory.m */,
+				61909D8E1B4ECE8E006943A8 /* Cart.h */,
+				61909D8F1B4ECE8E006943A8 /* Cart.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +178,15 @@
 				61909D801B4D2A46006943A8 /* Utility.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		61909D871B4EC224006943A8 /* CartItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				61909D881B4EC254006943A8 /* CartItemCell.h */,
+				61909D891B4EC254006943A8 /* CartItemCell.m */,
+			);
+			path = CartItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +292,13 @@
 			files = (
 				6177B3001B4B87CE00035DAC /* AppDelegate.m in Sources */,
 				6177B3031B4B87CE00035DAC /* MasterViewController.m in Sources */,
+				61909D8A1B4EC254006943A8 /* CartItemCell.m in Sources */,
 				61909D491B4CEE29006943A8 /* BaseItem.m in Sources */,
 				6177B2FD1B4B87CE00035DAC /* main.m in Sources */,
+				61909D901B4ECE8E006943A8 /* Cart.m in Sources */,
 				61909D811B4D2A46006943A8 /* Utility.m in Sources */,
 				61909D841B4D2E13006943A8 /* BaseCategory.m in Sources */,
+				61909D8D1B4EC396006943A8 /* CartViewController.m in Sources */,
 				6177B3061B4B87CE00035DAC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

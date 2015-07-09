@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseItem.h"
+
+#import "Cart.h"
 
 @interface DetailViewController : UIViewController
 

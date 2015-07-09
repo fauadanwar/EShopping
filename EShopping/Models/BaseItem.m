@@ -10,6 +10,7 @@
 
 @implementation BaseItem
 
+@synthesize itemID;
 @synthesize name;
 @synthesize image;
 @synthesize price;
@@ -20,6 +21,7 @@
     
     if (self)
     {
+        itemID = [dictionary objectForKey:@"Item ID"];
         name = [dictionary objectForKey:@"Name"];
         image = [dictionary objectForKey:@"Image"];
         price = [dictionary objectForKey:@"Price"];

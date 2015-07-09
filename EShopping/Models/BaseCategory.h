@@ -10,9 +10,11 @@
 
 @interface BaseCategory : NSObject
 
+@property(atomic,strong)NSNumber *categoryID;
 @property(atomic,strong)NSString *name;
 @property(atomic,strong)NSArray *itemArray;
 
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+
 @end
