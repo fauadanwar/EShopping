@@ -12,6 +12,9 @@
 
 @interface DetailViewController : UIViewController
 
+/*!
+    BaseItem cariable to store selected item. Later on replace thsi with base BaseCategory item.
+*/
 @property (strong, nonatomic) BaseItem *detailItem;
 
 @end

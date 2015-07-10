@@ -10,6 +10,9 @@
 
 @interface Utility : NSObject
 
+/*!
+    Parse plist file and retrive data in for mof NSArray.
+ */
 + (NSArray *)getArrayFromPlistFile:(NSString *)plistFileName;
 
 @end

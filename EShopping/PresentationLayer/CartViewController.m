@@ -133,7 +133,7 @@
      [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma mark - CartItemCell delegate
+#pragma mark - CartItemCell delegate to handle quantity of item change
 
 - (void)quantityChangedForCell:(CartItemCell *)cell withChangeInValue:(NSInteger)value
 {

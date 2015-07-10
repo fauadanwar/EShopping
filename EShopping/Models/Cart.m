@@ -184,6 +184,9 @@
     }
 }
 
+/*!
+    Method to retrive cart data in NSUserDefault. Later on replace with CoreData or file storage
+*/
 - (void)retrivePersistentStore
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

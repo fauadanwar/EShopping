@@ -10,8 +10,19 @@
 
 @interface BaseCategory : NSObject
 
+/*!
+    NSNumber variable to store Category ID for future enhancement.
+*/
 @property(atomic,strong)NSNumber *categoryID;
+
+/*!
+    NSString variable to store category name.
+*/
 @property(atomic,strong)NSString *name;
+
+/*!
+    NSArray variable to store Items.
+*/
 @property(atomic,strong)NSArray *itemArray;
 
 

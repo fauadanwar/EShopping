@@ -32,10 +32,16 @@
 {
     if (sender.tag == 1)
     {
+        /*!
+         if -ve button is pressed.
+         */
         [delegate quantityChangedForCell:self withChangeInValue:-1];
     }
     else
     {
+        /*!
+         if +ve button is pressed.
+         */
         [delegate quantityChangedForCell:self withChangeInValue:1];
     }
 }

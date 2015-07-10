@@ -14,6 +14,9 @@
 @protocol CartItemCellDelegate <NSObject>
 
 @required
+/*!
+ Called when user change quantity of items in cart.
+ */
 - (void)quantityChangedForCell:(CartItemCell *)cell withChangeInValue:(NSInteger)value;
 
 @end
@@ -32,6 +35,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *subTotalPrice;
 
+/*!
+    NSIndexPath for the cell.
+ */
 @property (strong, atomic) NSIndexPath *indexPath;
 
 @end

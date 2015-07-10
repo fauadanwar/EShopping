@@ -60,7 +60,6 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         BaseCategory *category = [self.itemsList objectAtIndex:indexPath.section];
-
         
         BaseItem *item = [category.itemArray objectAtIndex:indexPath.row];
         

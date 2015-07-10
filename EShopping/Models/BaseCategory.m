@@ -29,6 +29,9 @@
     return self;
 }
 
+/*!
+    Create NSArray of items from NSDictionary for given category.
+ */
 - (NSArray *)getItemsListFromDictionary:(NSDictionary *)dictionary
 {
     NSArray *items = [dictionary objectForKey:@"Items"];
