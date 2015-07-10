@@ -15,6 +15,7 @@
 @interface CartItem : BaseItem
 
 @property (readwrite, nonatomic) NSNumber *quantity;
+@property (readwrite, nonatomic) NSNumber *subTotal;
 
 @end
 
@@ -23,8 +24,15 @@
 
 +(instancetype)sharedInstance;
 
-@property (readonly, strong) NSMutableArray *items;
+@property (readonly, atomic) NSArray *items;
 
 @property (readonly, strong) NSNumber *totalPrice;
+@property (readonly, strong) NSNumber *totalItems;
+
+- (BOOL) addItem:(CartItem *)item;
+
+- (BOOL) removeItem:(CartItem *)item;
+
+- (void)updatePersistentStore;
 
 @end

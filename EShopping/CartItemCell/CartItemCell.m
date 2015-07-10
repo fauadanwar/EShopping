@@ -10,11 +10,13 @@
 
 @interface CartItemCell ()
 
-- (IBAction)numberOfItemsChanged:(id)sender;
+- (IBAction)numberOfItemsChanged:(UIButton *)sender;
 
 @end
 
 @implementation CartItemCell
+
+@synthesize delegate;
 
 - (void)awakeFromNib {
     // Initialization code
@@ -26,9 +28,16 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)numberOfItemsChanged:(id)sender {
-    
-    
+- (IBAction)numberOfItemsChanged:(UIButton *)sender
+{
+    if (sender.tag == 1)
+    {
+        [delegate quantityChangedForCell:self withChangeInValue:-1];
+    }
+    else
+    {
+        [delegate quantityChangedForCell:self withChangeInValue:1];
+    }
 }
 
 @end
