@@ -45,26 +45,46 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if ([Cart sharedInstance].items.count == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return [Cart sharedInstance].items.count;
+    }
     return [Cart sharedInstance].items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CartItemCell *cell = (CartItemCell *)[tableView dequeueReusableCellWithIdentifier:@"CartItemCell" forIndexPath:indexPath];
+    if ([Cart sharedInstance].items.count == 0)
+    {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EmptyCartCell" forIndexPath:indexPath];
+        
+        return  cell;
+    }
+    else
+    {
+        CartItemCell *cell = (CartItemCell *)[tableView dequeueReusableCellWithIdentifier:@"CartItemCell" forIndexPath:indexPath];
+        
+        CartItem *cartItem = (CartItem *)[[Cart sharedInstance].items objectAtIndex:indexPath.row];
+        
+        
+        cell.itemImage.image = [UIImage imageNamed:cartItem.image];
+        
+        cell.itemName.text = cartItem.name;
+        
+        cell.itemPrice.text = [cartItem.price stringValue];
+        
+        cell.itemQuantity.text = [cartItem.quantity stringValue];
+        
+        return  cell;
+    }
+
     
-    CartItem *cartItem = (CartItem *)[[Cart sharedInstance].items objectAtIndex:indexPath.row];
     
-    
-    cell.itemImage.image = [UIImage imageNamed:cartItem.image];
-    
-    cell.itemName.text = cartItem.name;
-    
-    cell.itemPrice.text = [cartItem.price stringValue];
-    
-    cell.itemQuantity.text = [cartItem.quantity stringValue];
-    
-    
-    return cell;
+    return nil;
 }
 
 - (IBAction)editCartButtonClicked:(id)sender {
