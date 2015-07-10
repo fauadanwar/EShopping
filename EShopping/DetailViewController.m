@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UIButton *addToCartButton;
+@property (weak, nonatomic) IBOutlet UIView *addvertisementView;
 - (IBAction)addToCartButtonClicked:(id)sender;
 
 @end
@@ -44,6 +45,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad))
+    {
+        if (_detailItem)
+        {
+            self.addvertisementView.hidden = YES;
+        }
+        else
+        {
+            self.addvertisementView.hidden = NO;
+        }
+    }
     [self configureView];
 }
 

@@ -33,6 +33,13 @@
     self.itemsList = [self getItemsList];
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad))
+    {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
