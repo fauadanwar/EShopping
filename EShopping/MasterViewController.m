@@ -46,6 +46,10 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
+        UIBarButtonItem *barButtonItem = [self.splitViewController displayModeButtonItem];
+        
+        [[UIApplication sharedApplication] sendAction:barButtonItem.action to:barButtonItem.target from:nil forEvent:nil];
+        
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         BaseCategory *category = [self.itemsList objectAtIndex:indexPath.section];

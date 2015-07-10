@@ -108,9 +108,9 @@
 				61909D7E1B4D2A39006943A8 /* Utility */,
 				61909D461B4CEE01006943A8 /* Models */,
 				6177B2FE1B4B87CE00035DAC /* AppDelegate.h */,
+				6177B2FF1B4B87CE00035DAC /* AppDelegate.m */,
 				61909D8B1B4EC396006943A8 /* CartViewController.h */,
 				61909D8C1B4EC396006943A8 /* CartViewController.m */,
-				6177B2FF1B4B87CE00035DAC /* AppDelegate.m */,
 				6177B3011B4B87CE00035DAC /* MasterViewController.h */,
 				6177B3021B4B87CE00035DAC /* MasterViewController.m */,
 				6177B3041B4B87CE00035DAC /* DetailViewController.h */,
@@ -428,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -438,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalPrice;
 
 - (IBAction)editCartButtonClicked:(id)sender;
+- (IBAction)doneButtonClicked:(id)sender;
 
 @end
 
@@ -67,5 +68,10 @@
 }
 
 - (IBAction)editCartButtonClicked:(id)sender {
+}
+
+- (IBAction)doneButtonClicked:(id)sender
+{
+     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
