@@ -39,7 +39,15 @@
         self.navigationItem.rightBarButtonItem = nil;
     }
     
-
+    
+    BaseCategory *category = [self.itemsList objectAtIndex:0];
+    
+    BaseItem *item = [category.itemArray objectAtIndex:0];
+    
+    [self.detailViewController setDetailItem:item];
+    
+    self.detailViewController.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+    self.detailViewController.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning {
